@@ -17,11 +17,14 @@
 
     //3. Среди барање и оди во AJAX
     function getResult() {
+		//API KEY;
+		var apiKey=api.apikey;
+		
         //Зема текст input и празно место заменува со знак '+'
         var imgSearch = $("#txt-search").val().replace(/ /g, "+");
 
         //API JSON и Query
-        var searchURL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBhl8HEyfNWyrELRGJxA--4yxHCKClY4f0&cx=015839596369991773278:ayvixgdemz8&searchType=image&q=" + imgSearch;
+        var searchURL = "https://www.googleapis.com/customsearch/v1?key="+apiKey+"&cx=015839596369991773278:ayvixgdemz8&searchType=image&q=" + imgSearch;
         console.log('Search URL: '+ searchURL);
 
         //Избриши ако има слики од претходно пребарување
