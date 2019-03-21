@@ -23,7 +23,7 @@
 
         //API JSON и Query
         var searchURL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBhl8HEyfNWyrELRGJxA--4yxHCKClY4f0&cx=015839596369991773278:ayvixgdemz8&searchType=image&q=" + imgSearch;
-        console.log('Search URL: '+ searchURL);
+        //console.log('Search URL: '+ searchURL);
 
         //Избриши ако има слики од претходно пребарување
         $("#content-img").empty();
