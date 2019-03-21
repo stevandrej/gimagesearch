@@ -17,8 +17,6 @@
 
     //3. Среди барање и оди во AJAX
     function getResult() {
-		//API KEY;
-		var apiKey=api.apikey;
 		
         //Зема текст input и празно место заменува со знак '+'
         var imgSearch = $("#txt-search").val().replace(/ /g, "+");
